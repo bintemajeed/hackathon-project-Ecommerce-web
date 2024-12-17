@@ -126,7 +126,7 @@ function Hero() {
     <div className="flex flex-col">
       {/* Men's Heading */}
       <ul className="flex gap-4 items-center justify-end p-2">
-        <p className="text-lg font-medium">Shop Men's</p>
+        <p className="text-lg font-medium">Shop Men&apos;s</p>
         <div className="p-1 rounded-full bg-[#f5f5f5] cursor-pointer">
           <ChevronLeft />
         </div>
@@ -158,7 +158,7 @@ function Hero() {
     <div className="flex flex-col">
       {/* Women's Heading */}
       <ul className="flex gap-4 items-center justify-end p-2">
-        <p className="text-lg font-medium">Shop Women's</p>
+        <p className="text-lg font-medium">Shop Women&apos;s</p>
         <div className="p-1 rounded-full bg-[#f5f5f5] cursor-pointer">
           <ChevronLeft />
         </div>
@@ -189,7 +189,7 @@ function Hero() {
 
 <section className="Dont-miss w-full">
    <div>
-    <h1 className="text-lg font-bold">Don't Miss</h1>
+    <h1 className="text-lg font-bold">Don&apos;t Miss</h1>
     <Image className="h-[700px] w-[1300px]" src={banner3}
     alt="trendy clothes"
     width={100}
@@ -258,53 +258,13 @@ function Hero() {
     <li className="text-[#757575] my-3">Hoodies and Pullovers</li>
     <li className="text-[#757575] my-3">Shirts And Tops</li>
   </ul>
-  <ul className="text-center lg:text-left"><li className="font-semibold my-3">Kids'</li>
+  <ul className="text-center lg:text-left"><li className="font-semibold my-3">Kids</li>
     <li className="text-[#757575] my-3">Infant & Toddler Shoes</li>
-    <li className="text-[#757575] my-3">Kids' Shoes</li>
-    <li className="text-[#757575] my-3">Kids' Jordan Shoes</li>
-    <li className="text-[#757575] my-3">Kids' Basketball Shoes</li></ul>
+    <li className="text-[#757575] my-3">Kid&apos;s Shoes</li>
+    <li className="text-[#757575] my-3">Kid&apos;s Jordan Shoes</li>
+    <li className="text-[#757575] my-3">Kid&apos;s Basketball Shoes</li></ul>
 </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
+</section>          
         </div>
       </div>
     </main>

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import pinkSnkrs from "@/images/pinkSnkr.png"
 import Button from "@/components/ui/Button"
+import { Link } from "lucide-react";
 // import Image from "next/image";
  // Adjust the image path as needed
 
@@ -28,7 +29,7 @@ function ProductDetails() {
             </h1>
             <p className="text-sm md:text-base lg:text-lg text-gray-700 leading-6 lg:leading-7">
               Turn style on its head with this crafted take on the Air Jordan 1 Mid.
-              Its "inside out"-inspired construction, including unique layering and
+              Its inside out inspired construction, including unique layering and
               exposed foam accents, ups the ante on this timeless Jordan Brand
               silhouette. Details like the deco stitching on the Swoosh add coveted
               appeal, while the unexpected shading, rich mixture of materials, and
@@ -37,7 +38,8 @@ function ProductDetails() {
             <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold my-5 text-[#111111]">
               ₹8695.00
             </h2>
-            <Button text="Add To Cart" />
+            <Link href="/CheckOut"> <Button text="Add To Cart" /></Link>
+           
           </div>
         </div>
       </div>

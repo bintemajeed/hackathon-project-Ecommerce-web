@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import {Roboto} from "next/font/google"
 import "./globals.css";
-import Navbar from "@/components/ui/Navbar";
+import MyNav from "@/components/ui/Navbar";
 import Footer from "@/components/ui/footer";
 
 
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`antialiased ${roboto.className}`}
-      ><Navbar/>
+      ><MyNav/>
         {children}
         <Footer/>
       </body>

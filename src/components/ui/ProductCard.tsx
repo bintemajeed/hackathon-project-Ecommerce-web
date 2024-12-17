@@ -7,11 +7,12 @@ interface ProductCardProps {
   name: string;                   // Product name
   price: string;                  // Product price
   category: string;               // Category like "Men's Shoes"
+  className?:string
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ image, name, price, category }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ image, name, price, category,className}) => {
   return (
-    <div className="w-[420] h-[480px]   items-start">
+    <div className={`w-[420] h-[480px]   items-start ${className}`}>
       {/* Image Section */}
       <div className="">
         <Image
