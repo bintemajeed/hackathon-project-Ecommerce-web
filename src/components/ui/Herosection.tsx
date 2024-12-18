@@ -51,8 +51,8 @@ function Hero() {
           </p>
         </div>
         <div className="text-center ">
-          <Button text="Notify Me" />
-          <Button text="Shop Air Max" />
+          <Button text="Notify Me" className="m-3"/>
+          <Button text="Shop Air Max" className="m-3"/>
         </div>
       </div>
       <div className="w-[93%] mx-auto">
@@ -200,7 +200,7 @@ function Hero() {
 <div className="text-center mt-8 mb-20">
   <h1 className="text-[35px] font-semibold md:text-[55px]">FLIGHT ESSENTIALS</h1>
   <p>Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.</p>
-  <Button text="Shop"/>
+  <Button text="Shop" className="m-3"/>
 </div>
 
 
@@ -224,7 +224,7 @@ function Hero() {
         layout="responsive"/>
       </div>
       {/* Column 3 */}
-      <div className="w-[430] h-[540px]">
+      <div className="my-7">
         <Image src={drawer}
         width={430}
         height={540}
