@@ -10,7 +10,7 @@ interface ButtonProps {
     return (
       <button
         
-        className={`bg-black ${className} text-white font-medium py-2 px-5 m-3 rounded-[20px] hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-400`}
+        className={`bg-black ${className} text-white font-medium py-2 px-5 rounded-[20px] hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-400`}
       >
         {text}
       </button>
