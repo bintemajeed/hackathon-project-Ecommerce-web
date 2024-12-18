@@ -1,38 +1,64 @@
+import Image from "next/image";
+import logo2 from "@/images/logo2.png";
+import Button from "@/components/ui/Button";
+import InputField from "@/components/ui/input";
+import MyCheckbox from "@/components/ui/MyCheckbox";
+import Link from "next/link";
 
-import Image from "next/image"
-import logo2 from "@/images/logo2.png"
-import Button from "@/components/ui/Button"
-import InputField from "@/components/ui/input"
-import MyCheckbox from "@/components/ui/MyCheckbox"
-import Link from "next/link"
-function   Login(){
-    return(
-        <main>
-        <div className="w-[93%] mx-auto">
-            <div className="h-[490px] w-[380px] mx-auto my-10">
-
-            <div className="w-[95%] mx-auto text-center">
-                <div className="flex justify-center">
-                <Image className="mb-[30px]"
-                 src={logo2}
-                alt={"logo"}
+function Login() {
+  return (
+    <main className="bg-gray-50 min-h-[100vh] flex  justify-center">
+      <div className="w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[30%] mx-auto">
+        <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <Image
+                src={logo2}
+                alt="logo"
                 width={40}
-                height={20}/></div>
-                <h1 className="text-2xl font-semibold">YOUR ACCOUNT  <br /> FOR EVERYTHING <br /> NIKE</h1>
-                  <InputField  type="email" placeholder="Enter Email" className="w-[100%] " />
-               <InputField type="password" placeholder="Enter Password" className="w-[100%]" />
-               <div className="flex justify-between py-7">
-               <MyCheckbox label="Keep me logged in" id="login" />
-               <p className="text-sm text-[#757575] cursor-pointer">Forgotten Your Password?</p>
-               </div>
-               <p>By logging in, you agree to Nike&apos;s <a href="#" className="underline">Privacy Policy</a></p>
-
-     <Button text="Sign In" className="rounded-[5px] w-[100%]"/>
-     <p className="text-[#757575]">Not a Member? <Link href="/Signin" className="underline text-black">Join Us</Link></p>
-</div>
+                height={20}
+                className="mb-4"
+              />
             </div>
-             </div>
-             </main>
-    )
+            <h1 className="text-xl sm:text-2xl font-semibold mb-6">
+              YOUR ACCOUNT <br />
+              FOR EVERYTHING <br />
+              NIKE
+            </h1>
+            <InputField
+              type="email"
+              placeholder="Enter Email"
+              className="w-full mb-4"
+            />
+            <InputField
+              type="password"
+              placeholder="Enter Password"
+              className="w-full mb-6"
+            />
+            <div className="flex flex-col sm:flex-row justify-between items-center py-4">
+              <MyCheckbox label="Keep me logged in" id="login" />
+              <p className="text-sm text-gray-500 cursor-pointer mt-2 sm:mt-0">
+                Forgotten Your Password?
+              </p>
+            </div>
+            <p className="text-sm text-gray-600 mb-4">
+              By logging in, you agree to Nike&apos;s{" "}
+              <a href="#" className="underline">
+                Privacy Policy
+              </a>
+            </p>
+            <Button text="Sign In" className="rounded-md w-full py-2" />
+            <p className="text-sm text-gray-600 mt-4">
+              Not a Member?{" "}
+              <Link href="/Signin" className="underline text-black">
+                Join Us
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
 }
-export default Login
+
+export default Login;
